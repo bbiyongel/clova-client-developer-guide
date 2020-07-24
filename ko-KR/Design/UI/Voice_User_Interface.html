@@ -1,0 +1,382 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+  <article id="c0147a21-824c-422d-8d0d-ed90c0e79f63" class="page sans notion-content">
+    <header>
+      <h1 class="page-title">Voice User Interface</h1>
+    </header>
+    <div class="page-body">
+      <p id="0a6ccbf5-7052-405b-82b4-fee5a53d7ed1" class="">CLOVA는 주로 사용자의 목소리를 통해 요청을 받고 그 결과를 제공합니다. Voice User Interface(이하 VUI)는 이와 같이 음성이 주가 되는 사용 환경에서 사용자에게 제공되는 GUI 디자인을 일컫습니다. CLOVA는 VUI의 대표적인 요소로 Push To Talk 버튼과 Green Dot을 제공하고 있으며 이 페이지는 다음에 대해 설명합니다.</p>
+      <nav id="4a400dfb-49dc-4f6d-bdef-2e36c0109e08" class="block-color-gray table_of_contents">
+        <div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#PTTButton">Push To Talk 버튼</a></div>
+        <div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#GreenDot">Green Dot</a></div>
+        <div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#VUIMotion">VUI 동작</a></div>
+        <div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#VUIScreenLayout">VUI 요소 화면 배치</a></div>
+        <div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#VUIExamples">VUI 적용 예</a></div>
+      </nav>
+      <div class="note">
+        <p><strong>Note!</strong></p>
+        <p>Push To Talk 버튼과 Green Dot에 대한 이미지 자료를 구하려면 제휴 담당자에게 연락바랍니다.</p>
+      </div>
+      <hr id="370271d3-905a-455c-9792-ffc0e368648d" />
+      <h2 id="PTTButton" class="">Push To Talk 버튼</h2>
+      <p id="554ccaec-1f01-4208-bedc-858a581a09f2" class=""><strong>Push to Talk 버튼(이하 PTT 버튼)</strong>은 <a href="#GreenDot">Green Dot</a>이 활성되도록 만드는 버튼이며, 주로 화면에서 GUI 버튼으로 구현됩니다. 이 절에서는 PTT 버튼의 색상과 동작 그리고 응용 방법에 대해 설명합니다.</p>
+      <h3 id="167985ba-1036-4d08-9cf9-c9dc699b1e64" class="">PTT 버튼 색상</h3>
+      <p id="5e667883-37cb-423e-96b0-c26849417438" class="">PTT 버튼은 아래와 같은 마이크 모양에 두 가지 색의 그라데이션을 주어 표시해야 합니다.</p>
+      <figure id="a7220f6a-400a-40aa-9824-97fa5d0e0b15" class="image"><a href="VoiceUserInterface/Page_Visual_1_Copy_2%201.png"><img style="width:1420px" src="VoiceUserInterface/Page_Visual_1_Copy_2%201.png" /></a></figure>
+      <p id="9c643fac-a809-4718-96c9-03a58837a5cf" class="">클라이언트가 마이크 꺼짐(Mic. off) 또는 오류(Error) 상태이면, 아래와 같이 비활성화 상태로 표시합니다.</p>
+      <figure id="f53b781d-7b71-473c-adc5-aedd854c81cf" class="image"><a href="VoiceUserInterface/Page_Visual_1_Copy_5.png"><img style="width:1420px" src="VoiceUserInterface/Page_Visual_1_Copy_5.png" /></a></figure>
+      <hr id="fb0bde3e-4fb7-40c8-b3dc-d7330f5451a1" />
+      <h3 id="509e62c3-a144-4e90-89d8-bc6b953dca0b" class="">PTT 버튼 응용</h3>
+      <p id="3b333a57-4a26-45de-9dd0-d11a74efd60b" class="">아래와 같이 원형의 테두리가 있는 PTT 버튼처럼 UI를 응용하여 사용할 수도 있습니다. 이때, 마이크 아이콘은 원형 테두리의 가운데 위치해야 하며, 좌우 여백은 마이크 아이콘과 같은 너비로 상하 여백은 마이크 아이콘 높이의 절반 크기로 여백을 유지해야 합니다.</p>
+      <figure id="65b71d84-ed12-4fc2-94b8-35c2981dc6e8" class="image"><a href="VoiceUserInterface/Artboard_1111_Copy.png"><img style="width:1400px" src="VoiceUserInterface/Artboard_1111_Copy.png" /></a></figure>
+      <figure id="5e736c5b-b696-4623-a004-53b7728b1304" class="image"><a href="VoiceUserInterface/Artboard_Copy_3.png"><img style="width:1400px" src="VoiceUserInterface/Artboard_Copy_3.png" /></a></figure>
+      <hr id="dcd33422-d71e-4d83-9653-d99caad961f6" />
+      <h2 id="GreenDot" class="">Green Dot</h2>
+      <p id="35f845e5-d052-4d26-912f-7fcf493bd0e3" class="">Green Dot은 CLOVA의 음성 검색 도구이자 정체성을 나타내는 GUI 요소입니다. Green Dot은 사용자의 음성 입력 수신, CLOVA 음성 출력 등 CLOVA 음성 동작과 관련된 상태를 표현합니다. 화면을 가진 클라이언트 기기는 Green Dot을 표현해야 합니다.</p>
+      <h3 id="af30962a-14a0-48de-8fd2-9e22e1fe7b2f" class="">Green Dot 색상</h3>
+      <p id="7cb8c2e1-1538-43fd-8beb-5002e503bb09" class="">Green Dot은 다음과 같이 도넛 형태의 고리 모양에 세 가지 색의 그라데이션을 주어 표시해야 합니다.</p>
+      <figure id="188aaabd-fbc4-493d-8e9c-a7e7a9210742" class="image"><a href="VoiceUserInterface/Page_Visual_1_Copy_2.png"><img style="width:1420px" src="VoiceUserInterface/Page_Visual_1_Copy_2.png" /></a></figure>
+      <hr id="7f2fa8d8-5a41-49b1-b97f-7dc3ca318266" />
+      <h3 id="1aecf592-b38e-4a90-9d5d-28d2c9e30044" class="">Green Dot 배경 색상</h3>
+      <p id="b53693f7-8999-4b86-9c65-759b71168401" class="">Green Dot이 모든 환경에서 높은 명시성이 유지될 수 있도록 색의 대비를 고려해 배경 색상을 선택해야 합니다. 다음은 <strong>Black 배경</strong>을 적용할 때 사용할 수 있는 배경 색상과 그 대비를 보여줍니다.</p>
+      <figure id="1c31cb63-879d-450d-8c97-067bda06fa50" class="image"><a href="VoiceUserInterface/0001.png"><img style="width:1920px" src="VoiceUserInterface/0001.png" /></a></figure>
+      <p id="4ff859b9-9de9-4dfa-82d9-998cc805cef4" class="">
+      </p>
+      <p id="ac4088d5-ff2a-4ea2-8761-ba90c19e199e" class="">다음은 <strong>CLOVA Green 배경</strong>을 적용할 때 사용할 수 있는 배경 색상과 그 대비를 보여줍니다.</p>
+      <figure id="b1453dd7-bd1f-43bc-ae2b-85e252ac95b4" class="image"><a href="VoiceUserInterface/0001_copy.png"><img style="width:1920px" src="VoiceUserInterface/0001_copy.png" /></a></figure>
+      <hr id="c0b24183-62a8-4458-84f2-f34cffacd245" />
+      <h3 id="a3f487b4-ac7f-405b-92e3-71d2cbb0a170" class="">Green Dot 유의 사항</h3>
+      <p id="dc55f56a-e2fc-4c0d-b63f-ebeff058cdeb" class="">Green Dot을 사용하기 전에 아래 유의 사항을 지켜주십시오.</p>
+      <div id="d884e92a-2eb6-43d5-a494-7c1608c34538" class="column-list">
+        <div id="8fe94790-741b-415a-ba7e-8d14b0a58eba" style="width:33.33333333333333%" class="column">
+          <figure id="ef20bb57-268d-4076-864b-13630df3449e" class="image"><a href="VoiceUserInterface/22222_copy.png"><img style="width:36px" src="VoiceUserInterface/22222_copy.png" /></a></figure>
+          <figure id="74981969-b2fa-4614-9a2d-094ded05eb81" class="image"><a href="VoiceUserInterface/Page_Visual_1_Copy_4.png"><img style="width:700px" src="VoiceUserInterface/Page_Visual_1_Copy_4.png" /></a></figure>
+          <p id="710b6423-ae8d-430a-9a52-5ca30024c78a" class=""><strong>Green Dot을 과도한 크기로 표현하지 마십시오.</strong></p>
+        </div>
+        <div id="f57de7eb-8758-4723-a3dc-43d49c8e05d1" style="width:33.33333333333333%" class="column">
+          <figure id="f09e7043-396d-400a-81bb-8b598e2eb959" class="image"><a href="VoiceUserInterface/22222_copy.png"><img style="width:36px" src="VoiceUserInterface/22222_copy.png" /></a></figure>
+          <figure id="a8954b6a-92c4-4dab-ae64-81078fbc11ea" class="image"><a href="VoiceUserInterface/Page_Visual_1_Copy.png"><img style="width:700px" src="VoiceUserInterface/Page_Visual_1_Copy.png" /></a></figure>
+          <p id="01fc2142-5e59-402c-b60b-0b661f9d6c9a" class=""><strong>배경에 이미지에 효과를 주지 마십시오 </strong></p>
+        </div>
+        <div id="34dfe87c-f2b4-45e3-9b4f-819953ebbd2d" style="width:33.33333333333334%" class="column">
+          <figure id="3f25c85e-dd3a-4d21-ad6c-91a3a3331043" class="image"><a href="VoiceUserInterface/22222_copy.png"><img style="width:36px" src="VoiceUserInterface/22222_copy.png" /></a></figure>
+          <figure id="585755b6-3267-40a0-a9fb-acb30cb22bb6" class="image"><a href="VoiceUserInterface/22222.png"><img style="width:700px" src="VoiceUserInterface/22222.png" /></a></figure>
+          <p id="176a3e5f-d74a-40f2-b114-24967b70cf4e" class=""><strong>배경 컬러에 불필요한 투명도를 적용하지 마십시오.</strong></p>
+        </div>
+      </div>
+      <div id="7b18f919-36e3-40eb-a903-b3023a6ec515" class="column-list">
+        <div id="ac457d6a-79e3-493e-b5ae-594386fab693" style="width:33.333333333333336%" class="column">
+          <figure id="16fa1085-9e88-4228-88b1-b2e455b19759" class="image"><a href="VoiceUserInterface/22222_copy.png"><img style="width:36px" src="VoiceUserInterface/22222_copy.png" /></a></figure>
+          <figure id="6d7fb78d-41ae-468e-b440-4dbedf2abb9f" class="image"><a href="VoiceUserInterface/Page_Visual_1_Copy_7.png"><img style="width:700px" src="VoiceUserInterface/Page_Visual_1_Copy_7.png" /></a></figure>
+          <p id="4a8112af-f4de-443f-bac9-cd8f566baca3" class=""><strong>강하게 대비되는 배경 컬러 사용은 없어야 합니다.</strong></p>
+        </div>
+        <div id="a2ada6e2-6399-46c7-8a6a-3138a51da27f" style="width:33.33333333333333%" class="column">
+          <figure id="e7f21d55-1983-4561-a69f-d1f70637b2b0" class="image"><a href="VoiceUserInterface/22222_copy.png"><img style="width:36px" src="VoiceUserInterface/22222_copy.png" /></a></figure>
+          <figure id="3aca8a93-f4e2-4378-a1a5-3e4f7f63b90b" class="image"><a href="VoiceUserInterface/Page_Visual_1_Copy_3.png"><img style="width:700px" src="VoiceUserInterface/Page_Visual_1_Copy_3.png" /></a></figure>
+          <p id="7d8c7ce7-a6c4-4e28-9ae0-15c00af7fcf1" class=""><strong>비슷한 채도의 그라데이션을 사용하지 마십시오.</strong></p>
+        </div>
+        <div id="581d4b89-54f9-4d23-8bbd-e1d3d17e0c24" style="width:33.33333333333334%" class="column">
+          <figure id="327e33e1-af25-449e-90da-996a1983b24d" class="image"><a href="VoiceUserInterface/22222_copy.png"><img style="width:36px" src="VoiceUserInterface/22222_copy.png" /></a></figure>
+          <figure id="18797a31-ced5-44a5-ad28-5f99f5ca2af9" class="image"><a href="VoiceUserInterface/Page_Visual_1_Copy_7%201.png"><img style="width:700px" src="VoiceUserInterface/Page_Visual_1_Copy_7%201.png" /></a></figure>
+          <p id="ba969c85-5a7a-457a-99b2-84a0eb34bd68" class=""><strong>불필요한 보조 색상을 함께 사용하지 마십시오.</strong></p>
+        </div>
+      </div>
+      <hr id="845bd3ee-5756-4586-a0f6-88802521817d" />
+      <h2 id="VUIMotion" class="">VUI 동작</h2>
+      <p id="8d4cca41-b86f-4ec1-aa6d-56bf50656ab4" class="">VUI 요소인 PTT 버튼과 Green Dot은 <a href="#VUIDefaultMotion">기본 동작</a> 또는 <a href="#VUIMotionForTouchlessDevice">터치 인터페이스 미사용 시 동작</a>으로 표현되어야 합니다. 여기서는 각 방식이 어떻게 표현되어야 하는지 설명합니다.</p>
+      <h3 id="VUIDefaultMotion" class="">기본 동작</h3>
+      <p id="274fab56-cfc1-45fe-a05e-80603bdc9f60" class="">VUI는 기본적으로 단계에 따라 다음과 같이 표현되어야 합니다.</p>
+      <div id="be94b5e4-cd1c-4826-8822-22b24204ce5c" class="column-list">
+        <div id="15afc1d0-d153-444f-b552-b2d65e8f51a7" style="width:50%" class="column">
+          <p id="3bb11ebe-a7e5-462e-90c5-a3bde7059a9d" class=""><strong>1. 입력 전(Idle)</strong></p>
+          <figure id="20c4b384-3dd8-45bb-b2ea-7f46b7498aae" class="image"><a href="VoiceUserInterface/Idle.png"><img style="width:700px" src="VoiceUserInterface/Idle.png" /></a></figure>
+          <p id="0fbe2128-a8d1-49a4-a5ee-825534346ccd" class="">사용자가 아무런 동작을 취하지 않은 기본 상태.</p>
+        </div>
+        <div id="7ae6616c-8df3-4b1a-947f-2aea0ad933c1" style="width:50%" class="column">
+          <p id="3edd8227-7a0a-4ce0-a3f4-ca0b9152ce65" class=""><strong>2. 준비(Intro)</strong></p>
+          <figure id="acc15ee9-4293-40b5-be5a-82dc75f0916a" class="image"><a href="VoiceUserInterface/1_READY_greenDot.gif"><img style="width:700px" src="VoiceUserInterface/1_READY_greenDot.gif" /></a></figure>
+          <p id="d1eff57e-633a-43be-93d3-14b24d193587" class="">사용자가 호출어를 부르거나 버튼을 눌렀을 때 표시되는 동작</p>
+        </div>
+      </div>
+      <div id="41fc2fe8-b33c-4fad-bd79-004952497247" class="column-list">
+        <div id="147514a3-fdbc-47df-bc21-0f7c88dfa1bc" style="width:50%" class="column">
+          <hr id="8e71530b-684c-47ad-bd26-15270c11e46f" />
+        </div>
+        <div id="bc2d24dc-ec43-47e4-923d-c0abc5413bed" style="width:50%" class="column">
+          <hr id="efe0df51-2add-4021-b17d-a7f6777820e2" />
+        </div>
+      </div>
+      <div id="66a9762d-8271-4abc-a06d-87c00926e6ef" class="column-list">
+        <div id="4f22830b-e676-4c68-ae62-7d8b0da9eec8" style="width:50%" class="column">
+          <p id="89e14d91-c700-48a5-bebb-0860ab3682d3" class=""><strong>3. 듣기(Listening)</strong></p>
+          <figure id="5f959298-798c-46ce-8b70-e4fa49f4b5c0" class="image"><a href="VoiceUserInterface/3_LISTENINGwave.gif"><img style="width:700px" src="VoiceUserInterface/3_LISTENINGwave.gif" /></a></figure>
+          <p id="c1c15c4b-60d3-4bf7-a101-a62a46b4983b" class="">사용자의 음석 입력이 실제로 인지되어 입력되고 있을 때 표시되는 동작</p>
+        </div>
+        <div id="ba37ad36-a43a-4b57-a20a-79db8b29a81f" style="width:50%" class="column">
+          <p id="cc06e78b-18bb-472d-b18a-516faf7bdae5" class=""><strong>4. 분석/처리(Processing)</strong></p>
+          <figure id="d937728d-9303-45ff-9ff0-fc2849fdf6bb" class="image"><a href="VoiceUserInterface/4_PROCESSING.gif"><img style="width:700px" src="VoiceUserInterface/4_PROCESSING.gif" /></a></figure>
+          <p id="c07c4f16-61fe-4992-8261-b06e0a2f5820" class="">사용자의 요청을 분석하고 이를 처리하고 있을 때 표시되는 동작</p>
+        </div>
+      </div>
+      <div id="1dae3146-f42a-4e8a-8c8a-9d6ce4fb5a21" class="column-list">
+        <div id="c4f8c2ca-3f01-45db-900b-a52f2875acd1" style="width:50%" class="column">
+          <hr id="c48ec8a8-16f3-41b9-be07-d6896cfd760e" />
+        </div>
+        <div id="e655fa68-e976-442b-822f-bc3efee59ddc" style="width:50%" class="column">
+          <hr id="43cfae07-95bc-41cf-8981-50f3ef9c1bc3" />
+        </div>
+      </div>
+      <div id="0e1bb9e6-0677-4a2c-8106-4e21e1f27f22" class="column-list">
+        <div id="8c213ae0-3425-4eb7-905b-5e7c04bc504e" style="width:50%" class="column">
+          <p id="2ce27ef1-5f1d-4654-8e3a-35e34361fab4" class=""><strong>4. 대답(Answering)</strong></p>
+          <figure id="cb73d4ea-07a5-4287-b051-8f4d90e28ed0" class="image"><a href="VoiceUserInterface/5_ANSWER.gif"><img style="width:700px" src="VoiceUserInterface/5_ANSWER.gif" /></a></figure>
+          <p id="3a35c3b6-a59b-498b-b261-001dc23c4f44" class="">사용자의 요청에 대한 응답을 TTS로 출력하고 있을 때 표시되는 동작. 이 동작은 다음과 같이 세 구간으로 구분됩니다.</p>
+          <ul id="d228cacd-8af1-4b64-99fd-f86d354fa886" class="block-color-gray bulleted-list">
+            <li><strong>진입 구간</strong>: 응답(TTS)이 시작됨을 표현
+              (<strong>1~13번</strong> 프레임)</li>
+          </ul>
+          <ul id="1bf01fae-bceb-41d6-a23a-46ba9d9e9571" class="block-color-gray bulleted-list">
+            <li><strong>반복 구간</strong>: TTS 출력을 표현(<strong>14~29번</strong> 프레임). 응답이 완료될 때까지 이 구간을 반복합니다.</li>
+          </ul>
+          <ul id="83315cd0-e711-4d60-965b-23c1b71c8013" class="block-color-gray bulleted-list">
+            <li><strong>종료 구간</strong>: 응답이 종료됨을 표현
+              (<strong>30~41번</strong> 프레임)</li>
+          </ul>
+          <hr id="116f5ab2-84d4-41ce-b4cb-fcf36519bb97" />
+          <p id="e6e90f47-fd9c-4a7d-90fa-a28045c133d3" class=""><strong>7. 오류(Error)</strong></p>
+          <figure id="5a5e9a11-f4b5-40fb-9c5e-3252e3c669b9" class="image"><a href="VoiceUserInterface/7_ERROR.gif"><img style="width:700px" src="VoiceUserInterface/7_ERROR.gif" /></a></figure>
+          <p id="8f87403d-1e19-4054-967b-d1ea37bcdb2b" class="">오류가 발생한 상태</p>
+        </div>
+        <div id="f5e00854-a112-42b1-9f79-04f2d305802e" style="width:50%" class="column">
+          <p id="9b14ab84-7b1f-4524-aefc-1ad54a43a78a" class="">5<strong>. 완료(Complete)</strong></p>
+          <figure id="41ae25c2-8ce7-409c-802e-4140ed2e1757" class="image"><a href="VoiceUserInterface/6_CONFIRMATION_greenDot.gif"><img style="width:700px" src="VoiceUserInterface/6_CONFIRMATION_greenDot.gif" /></a></figure>
+          <p id="a3b69723-2035-4aaa-9e55-ea80405fdabf" class="">사용자의 요청에 대한 응답을 마무리할 때
+            표시되는 동작</p>
+          <p id="4a198b47-82e3-4bef-ae56-bf132ef94dd3" class="">
+          </p>
+        </div>
+      </div>
+      <div class="note">
+        <p><strong>Note!</strong></p>
+        <p>Green Dot 동작을 보여주는 속도는 30fps여야 합니다.</p>
+      </div>
+      <p id="e22d2f44-a9b7-4962-ac53-1619b195b8f0" class="">
+      </p>
+      <p id="ce76ec01-19e0-45bb-9605-58d9b75a4c01" class="">사용자의 동작이나 클라이언트의 상태 변화에 따라 VUI를 표현해야 합니다. 다음은 각 상태에 따라 어떻게 VUI를 표현해야 하는지 그 규칙을 설명합니다.</p>
+      <ul id="0e2494a0-db73-4c9f-819b-a919eb019dbe" class="bulleted-list">
+        <li>사용자가 호출어를 부르거나 버튼을 눌러 클라이언트가 <strong>Attending</strong> 상태로 진입하면 <strong>준비</strong> 동작을 재생합니다.</li>
+      </ul>
+      <ul id="c785c3f1-1e44-4df3-ad5c-79001039129d" class="bulleted-list">
+        <li><strong>준비</strong> 동작을 한 번 표시한 후 클라이언트가 <strong>Listening</strong> 상태로 진입하면 사용자의 음성 입력이 끝날 때까지 <strong>듣기</strong> 동작을 반복 재생합니다.</li>
+      </ul>
+      <ul id="3408342c-7bea-4d08-9cb3-d689567e517b" class="bulleted-list">
+        <li>사용자의 입력이 끝나고 클라이언트가 <strong>Processing &amp; reporting</strong> 상태로 진입하면 응답을 출력하거나 결과 화면을 보여주기 전까지 <strong>분석/처리</strong> 동작을 반복 재생합니다.</li>
+      </ul>
+      <ul id="49cb9f39-09fe-483f-b347-877806706c4c" class="bulleted-list">
+        <li>응답(TTS)를 출력할 때 <strong>대답</strong>의 진입 구간을 한 번 재생한 후 반복 구간을 응답이 끝날 때까지 반복 재생합니다. 응답이 종료되면 종료 구간을 한 번 재생합니다.</li>
+      </ul>
+      <ul id="26ea05be-e849-44aa-8a5a-4467d8b68f95" class="bulleted-list">
+        <li>만약, 응답을 출력할 때 <strong>대답</strong> 동작을 구분하여 표현하기 어렵다면 반복 구간만 반복 재생합니다.</li>
+      </ul>
+      <ul id="1d22cf36-5d33-4beb-a89c-8e7863f0d606" class="bulleted-list">
+        <li>사용자 요청에 대해 필요한 작업을 모두 수행하여 클라이언트가 <strong>Idle</strong> 상태로 진입하게 되면 <strong>완료</strong> 동작을 한 번 재생한 후 <strong>입력 전(PTT 버튼)</strong> 단계로 돌아갑니다.</li>
+      </ul>
+      <hr id="417f1a02-25de-4df6-9e18-fb2bbf370efa" />
+      <h3 id="VUIMotionForTouchlessDevice" class="">터치 인터페이스 미사용 시 동작</h3>
+      <p id="fdab9d34-a781-482a-b67a-ca89c86a8981" class="">터치 인터페이스를 사용할 수 없는 기기는 PTT 버튼을 포함하지 않고 Green Dot으로만 동작을 표시해야 합니다. PTT 버튼이 포함되지 않은 VUI 동작은 다음과 같이 표현되어야 합니다.</p>
+      <div id="b4680c2f-f5b0-461c-9dcf-22f37b68e7f6" class="column-list">
+        <div id="f011907b-92f8-41ab-83c8-0d21d5a65d74" style="width:50%" class="column">
+          <p id="6beb03ee-f164-44a2-9227-d01c56173017" class=""><strong>1. 준비(Intro)</strong></p>
+        </div>
+        <div id="96d530d4-7473-4f37-8a85-059ea6f2ac64" style="width:50%" class="column">
+          <p id="2112b4e3-e960-42ab-9f13-88252026da51" class=""><strong>2. 대기(Waiting)</strong></p>
+        </div>
+      </div>
+      <div id="ac2f0400-1c06-4a8d-8424-27862cb1b46c" class="column-list">
+        <div id="ff1a79b4-3c49-4c99-9a24-4b740533a3eb" style="width:50%" class="column">
+          <figure id="03c1b1db-42eb-4d96-9227-7b859fd7fdd0" class="image"><a href="VoiceUserInterface/1_READY_greenDot.gif"><img style="width:700px" src="VoiceUserInterface/1_READY_greenDot.gif" /></a></figure>
+        </div>
+        <div id="838a379f-467e-49b3-8179-39d3ba4f7535" style="width:50%" class="column">
+          <figure id="4b24a03c-6d59-493f-85f2-4f279951ea00" class="image"><a href="VoiceUserInterface/2_STANDBY.gif"><img style="width:700px" src="VoiceUserInterface/2_STANDBY.gif" /></a></figure>
+        </div>
+      </div>
+      <div id="82aa7e2c-3b11-4fae-bc58-9f4d27b16e1e" class="column-list">
+        <div id="c9f9cd57-d0ee-4d16-9b15-57a18987451d" style="width:50%" class="column">
+          <p id="feb2b701-04ef-4f10-bb31-2860b191be4a" class="">사용자가 호출어를 부르거나 버튼을 눌렀을 때 표시되는 동작</p>
+        </div>
+        <div id="cb42482e-01d2-4a1d-83b0-f9db8a3d9d54" style="width:50%" class="column">
+          <p id="9955b591-e029-4da7-abf8-2e047704d82c" class="">사용자의 음성 입력이 실제로 입력되기 전까지 표시되는 동작</p>
+        </div>
+      </div>
+      <div id="6b985562-5bd5-442f-8218-81b978f3c475" class="column-list">
+        <div id="053a84fd-313d-4a81-858f-999d24b7e73a" style="width:50%" class="column">
+          <hr id="9dffc996-0543-4a76-bc34-0d9a996bb1b2" />
+        </div>
+        <div id="c286d4f6-b5e9-4bce-8c64-b5a84f56163c" style="width:50%" class="column">
+          <hr id="80bd5f65-992a-4f22-ad9e-ec0c6e420fbe" />
+        </div>
+      </div>
+      <div id="65082145-af12-4af9-889b-b25bcc36494c" class="column-list">
+        <div id="d12414cc-d7f3-4f28-8920-968f93f1a5c1" style="width:50%" class="column">
+          <p id="fab60121-92ab-4a58-825c-113b4fee5057" class=""><strong>3. 듣기(Listening)</strong></p>
+        </div>
+        <div id="b1ded729-ec6a-499b-b00a-e6a8b771c3d8" style="width:50%" class="column">
+          <p id="24a84e98-67b6-473e-a447-53251c86a4fd" class=""><strong>4. 분석/처리(Processing)</strong></p>
+        </div>
+      </div>
+      <div id="d0993b40-67f5-49c1-a4ef-3f252912627e" class="column-list">
+        <div id="80c45a08-1a7f-4dd4-9db9-cec257cb33e8" style="width:50%" class="column">
+          <figure id="9b51fab2-82d9-44b8-8e5f-a22f7d854abc" class="image"><a href="VoiceUserInterface/3_LISTENINGwave.gif"><img style="width:700px" src="VoiceUserInterface/3_LISTENINGwave.gif" /></a></figure>
+        </div>
+        <div id="8c08c6ec-2362-428d-b8e4-28f30bee6def" style="width:50%" class="column">
+          <figure id="b144572b-0ffe-4d50-877f-60968e12375c" class="image"><a href="VoiceUserInterface/4_PROCESSING.gif"><img style="width:700px" src="VoiceUserInterface/4_PROCESSING.gif" /></a></figure>
+        </div>
+      </div>
+      <div id="da0e40c5-7737-47f5-b8b0-c38c70e220e0" class="column-list">
+        <div id="e9eda0c8-1817-4926-ab84-58a609e027fa" style="width:50%" class="column">
+          <p id="c22cf062-aa8d-475b-9723-cdbe8b45bcaa" class="">사용자의 음석 입력이 실제로 인지되어 입력되고 있을 때 표시되는 동작</p>
+        </div>
+        <div id="3ccae3ed-e9ff-4744-b3dc-f7690e990be4" style="width:50%" class="column">
+          <p id="9fe01875-7deb-4f00-ab44-4d777c82965e" class="">사용자의 요청을 분석하고 이를 처리하고 있을 때 표시되는 동작</p>
+        </div>
+      </div>
+      <div id="98edf977-8473-4572-a5e0-9e079ccf3213" class="column-list">
+        <div id="87bdd9ba-fb9f-4ec1-8cd2-477f396c5094" style="width:50%" class="column">
+          <hr id="ffe47125-cd93-4547-bd9f-e88312af9e26" />
+        </div>
+        <div id="b18db34d-c0ad-4f01-808d-a13a376e73b4" style="width:50%" class="column">
+          <hr id="c02e9980-7763-4536-8fc6-8569cbaa198b" />
+        </div>
+      </div>
+      <div id="bb13c443-4db6-4a27-a789-fe8d96d098e8" class="column-list">
+        <div id="ad58b130-d74a-489e-9798-95ec9e22c9d7" style="width:50%" class="column">
+          <p id="5d78fc6a-5668-4a01-ad0e-46f150ff93e6" class=""><strong>4. 대답(Answering)</strong></p>
+        </div>
+        <div id="7e72af68-4939-4339-b01c-3017cc5f6dd6" style="width:50%" class="column">
+          <p id="9aa1e228-a471-4d51-a18d-7b6405564def" class=""><strong>7. 오류(Error)</strong></p>
+        </div>
+      </div>
+      <div id="419a0785-807b-484a-852c-c6a0ffe8191d" class="column-list">
+        <div id="ef325be2-d56c-476b-b46b-985f1475eb4f" style="width:50%" class="column">
+          <figure id="5cdde912-9fd8-478d-8916-0bd06000e48d" class="image"><a href="VoiceUserInterface/5_ANSWER.gif"><img style="width:700px" src="VoiceUserInterface/5_ANSWER.gif" /></a></figure>
+        </div>
+        <div id="68f0f2ec-819e-4737-b86e-8805de958517" style="width:50%" class="column">
+          <figure id="ee8b3521-fcd8-4099-b57a-d990f35861d5" class="image"><a href="VoiceUserInterface/7_ERROR.gif"><img style="width:700px" src="VoiceUserInterface/7_ERROR.gif" /></a></figure>
+        </div>
+      </div>
+      <div id="ee01ae55-c825-43a4-bae2-2a3446707d70" class="column-list">
+        <div id="7179aa4f-7d08-42fb-85aa-0fbd6db458fb" style="width:50%" class="column">
+          <p id="591016e2-22fd-488d-9319-6bf3ae2219f7" class="">사용자의 요청에 대한 응답을 TTS로 출력하고 있을 때 표시되는 동작. 이 동작은 다음과 같이 세 구간으로 구분됩니다.</p>
+          <ul id="6c7a89b8-e864-46bd-8e17-a741c0c29438" class="block-color-gray bulleted-list">
+            <li><strong>진입 구간</strong>: 응답(TTS)이 시작됨을 표현
+              (<strong>1~13번</strong> 프레임)</li>
+          </ul>
+          <ul id="0af696ca-1c0f-4ed4-a982-4ee436c621d3" class="block-color-gray bulleted-list">
+            <li><strong>반복 구간</strong>: TTS 출력을 표현(<strong>14~29번</strong> 프레임). 응답이 완료될 때까지 이 구간을 반복합니다.</li>
+          </ul>
+          <ul id="6c84f127-9d02-4833-8ac7-463d34a47913" class="block-color-gray bulleted-list">
+            <li><strong>종료 구간</strong>: 응답이 종료됨을 표현
+              (<strong>30~41번</strong> 프레임)</li>
+          </ul>
+          <hr id="653bd489-1618-4c29-9170-c13a5529bc15" />
+          <p id="8b76cdce-02d3-4d87-bc73-7b2e525a89ce" class=""><strong>5. 완료(Complete)</strong></p>
+          <figure id="1b19fdcc-b170-4d22-94b7-3a1ec4ac496f" class="image"><a href="VoiceUserInterface/6_CONFIRMATION_greenDot.gif"><img style="width:700px" src="VoiceUserInterface/6_CONFIRMATION_greenDot.gif" /></a></figure>
+        </div>
+        <div id="3500ffd6-b546-4ddb-a23d-a6372c8d401a" style="width:50%" class="column">
+          <p id="a1c387c5-99d3-4256-b9c6-6c62ab46b958" class="">오류가 발생한 상태</p>
+        </div>
+      </div>
+      <p id="59661e2f-ff95-459e-9848-17027f9ec82e" class="">사용자의 요청에 대한 응답을 마무리할 때
+        표시되는 동작</p>
+      <p id="b5735292-c2c6-4586-81a7-82a72cd3540d" class="">
+      </p>
+      <div class="note">
+        <p><strong>Note!</strong></p>
+        <p>Green Dot 동작을 보여주는 속도는 30fps여야 합니다.</p>
+      </div>
+      <p id="a911215e-ebbc-4f2a-9640-18ecfdad6ca5" class="">
+      </p>
+      <p id="f20a1a55-7acd-4f42-860e-fa332742fc46" class="">사용자의 동작이나 클라이언트의 상태 변화에 따라 VUI를 표현해야 합니다. 다음은 각 상태에 따라 어떻게 VUI를 표현해야 하는지 그 규칙을 설명합니다.</p>
+      <ul id="af47743f-6544-41dc-a233-775ee8f05443" class="bulleted-list">
+        <li>사용자가 호출어를 부르거나 버튼을 눌러 클라이언트가 <strong>Attending</strong> 상태로 진입하면 <strong>준비</strong> 동작을 재생합니다.</li>
+      </ul>
+      <ul id="58fffedf-3c49-4eb7-b669-45ad8dd3dcd5" class="bulleted-list">
+        <li><strong>준비</strong> 동작을 한 번 표시한 후 마이크를 통해 사용자의 실제 음성 입력이 시작되기 전까지 <strong>대기</strong> 동작을 반복 재생합니다.</li>
+      </ul>
+      <ul id="f080a9fd-fd3b-49e3-b63c-4a1580b7327c" class="bulleted-list">
+        <li>사용자의 실제 음성이 입력되기 시작하여 클라이언트가 <strong>Listening</strong> 모드로 진입하면 사용자의 음성 입력이 끝날 때까지 <strong>듣기</strong> 동작을 반복 재생합니다.</li>
+      </ul>
+      <ul id="f057a4b1-5297-4dcc-b865-4c5cbe425727" class="bulleted-list">
+        <li>사용자의 입력이 끝나고 클라이언트가 <strong>Processing &amp; reporting</strong> 상태로 진입하면 응답을 출력하거나 결과 화면을 보여주기 전까지 <strong>분석/처리</strong> 동작을 반복 재생합니다.</li>
+      </ul>
+      <ul id="d691e02f-66af-4bb2-bbbb-1fa35d3d8d08" class="bulleted-list">
+        <li>응답(TTS)를 출력할 때 <strong>대답</strong>의 진입 구간을 한 번 재생한 후 반복 구간을 응답이 끝날 때까지 반복 재생합니다. 응답이 종료되면 종료 구간을 한 번 재생합니다.</li>
+      </ul>
+      <ul id="83f4c228-a0c8-41b8-9c07-6764c60b07d3" class="bulleted-list">
+        <li>만약, 응답을 출력할 때 <strong>대답</strong> 동작을 구분하여 표현하기 어렵다면 반복 구간만 반복 재생합니다.</li>
+      </ul>
+      <ul id="1ccbb595-a317-4620-87fb-83701decd4bb" class="bulleted-list">
+        <li>사용자 요청에 대해 필요한 작업을 모두 수행하여 클라이언트가 <strong>Idle</strong> 상태로 진입하게 되면 <strong>완료</strong> 동작을 한 번 재생합니다.</li>
+      </ul>
+      <hr id="382a7321-33cc-4588-8e63-5e7428ecdbaf" />
+      <h2 id="VUIScreenLayout" class="">VUI 요소 화면 배치</h2>
+      <p id="c2c6e9be-525d-4d7c-bdc5-b137d15f32d8" class="">화면이 있는 클라이언트는 음성 반응을 나타내기 VUI를 제공해야 하며, Green Dot 또는 PPT 버튼과 같은 VUI 요소와 함께 다음과 같은 UI 요소들이 표시되어야 합니다. 이 절에서는 VUI와 관련된 요소들이 화면에 어떻게 배치되어야 하는지 설명합니다. </p>
+      <figure id="32657d6c-ce6c-499c-8eb1-3c63d1fc6669" class="image"><a href="VoiceUserInterface/image_1.png"><img style="width:1446px" src="VoiceUserInterface/image_1.png" /></a></figure>
+      <h3 id="93b06d51-0393-4f91-ade7-534e7a543c0c" class="">기본 화면 배치</h3>
+      <p id="f6f35c88-392b-4468-be98-6d42179a89d4" class="">다음은 기본적인 화면 구성 및 여백을 보여줍니다. 일반적으로 상단 또는 하단에 <strong>Interative bar</strong>를 배치하며 <strong>Interative bar</strong>는 <strong>화면 전체 높이의 15 %</strong>에 해당하는 높이를 할당하여 표시합니다.</p>
+      <ul id="73cff1ed-046f-4d58-8e5a-acd4230cbac8" class="bulleted-list">
+        <li><strong>상단 배치</strong>
+          <figure id="16ee09a7-a850-4bf8-a285-b64a8e142808" class="image"><a href="VoiceUserInterface/image_3.png"><img style="width:1362px" src="VoiceUserInterface/image_3.png" /></a></figure>
+        </li>
+      </ul>
+      <p id="76362bdc-a6b1-4953-bd77-ca97f3ea7977" class="">
+      </p>
+      <ul id="15d5812f-d18c-4da6-aecf-8a3c1fda37a6" class="bulleted-list">
+        <li><strong>하단 배치</strong>
+          <figure id="b855c65a-e5a9-47a9-8a2e-1465c6214251" class="image"><a href="VoiceUserInterface/image_2.png"><img style="width:1366px" src="VoiceUserInterface/image_2.png" /></a></figure>
+        </li>
+      </ul>
+      <h3 id="7c836bec-7bde-42a1-9508-50a2a7353eb4" class="">기본 화면 배치 - 다크 모드</h3>
+      <p id="465c0b2a-a5f1-4654-a145-f46470ec210f" class="">기본 화면 배치에서 다크 모드를 적용하려면 VUI 요소 <strong>Interactive Bar</strong> 영역에 <strong>Black 색상(#000000)을 사용</strong>합니다. 기기의 특징이나 사용 환경에 따라 <strong>불투명도(Opacity)를 최대 50 %까지</strong> 적용할 수 있습니다.</p>
+      <ul id="f2a3c0d5-a65a-487a-9879-57ad22468da2" class="bulleted-list">
+        <li><strong>상단 배치</strong>
+          <figure id="3acf430b-1105-4a25-9e48-fd988ceaa0b3" class="image"><a href="VoiceUserInterface/image_5.png"><img style="width:1362px" src="VoiceUserInterface/image_5.png" /></a></figure>
+        </li>
+      </ul>
+      <p id="853f28c1-ac2d-433c-9539-626c5f2fbc39" class="">
+      </p>
+      <ul id="7cd8aec0-61e4-46ef-a598-12c274ef0eeb" class="bulleted-list">
+        <li><strong>하단 배치</strong>
+          <figure id="9de47e3a-cb3f-4c98-b18a-552170f3e9e4" class="image"><a href="VoiceUserInterface/image_4.png"><img style="width:1366px" src="VoiceUserInterface/image_4.png" /></a></figure>
+        </li>
+      </ul>
+      <h3 id="615b3245-5b74-4291-95a2-5cd5b7e6218b" class="">특수 화면 배치</h3>
+      <p id="7362539f-bbdb-4819-b56e-9a33dec62491" class="">화면의 비율 및 해상도에 따라 특수하게 아래와 같이 <strong>Interactive Bar</strong>의 높이를 더 크게하여 화면을 구성할 수 있습니다. 이때 <strong>Interactive Bar</strong> 영역의 높이는 <strong>화면 전체 높이의 40 %</strong>에 해당하는 높이까지 키울 수 있습니다.</p>
+      <ul id="95c02eb8-1501-4f77-bfa1-42c379076344" class="bulleted-list">
+        <li><strong>하단 배치</strong>
+          <figure id="fac88683-15b8-49b4-8c50-a0bab3a5fe28" class="image"><a href="VoiceUserInterface/image_7.png"><img style="width:1386px" src="VoiceUserInterface/image_7.png" /></a></figure>
+          <p id="49046d63-6619-4417-93b9-64af7592dffc" class="">
+          </p>
+        </li>
+      </ul>
+      <ul id="7eda4f14-912b-4b42-a5cd-8e51d9c01ea6" class="bulleted-list">
+        <li><strong>하단 배치 - 다크 모드</strong>
+          <figure id="7c781ac5-65f7-4750-996b-a6f03f7aa406" class="image"><a href="VoiceUserInterface/image_6.png"><img style="width:1386px" src="VoiceUserInterface/image_6.png" /></a></figure>
+        </li>
+      </ul>
+      <hr id="de940cbf-9c9a-43a8-91ff-057e67967b8f" />
+      <h2 id="VUIExamples" class="">VUI 적용 예</h2>
+      <p id="85eadd57-0465-4e80-81aa-582b6b2f906d" class="">CLOVA의 VUI가 적용된 예는 다음과 같습니다.</p>
+      <figure id="3779d1ef-1b87-45d6-a52c-5505f40c332d" class="image"><a href="VoiceUserInterface/guide_set01.gif"><img style="width:960px" src="VoiceUserInterface/guide_set01.gif" /></a></figure>
+      <figure id="71b65dca-4b6d-4f21-90cf-8131ce2cc2d9" class="image"><a href="VoiceUserInterface/guide_set02.gif"><img style="width:960px" src="VoiceUserInterface/guide_set02.gif" /></a></figure>
+      <figure id="800cac75-80a9-439a-8033-a51561111bb2" class="image"><a href="VoiceUserInterface/guide_set03.gif"><img style="width:960px" src="VoiceUserInterface/guide_set03.gif" /></a></figure>
+    </div>
+  </article>
+</body>
+
+</html>
